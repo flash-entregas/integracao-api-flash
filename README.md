@@ -1,4 +1,18 @@
-# integracao-api-flash
+# Integração API Flash Entregas
+Integração para empresas com o sistema FLASH
+Função do Franqueado, pré integração:
+O franqueado precisa realizar essas etapas no sistema FLASH.
+1 - Cadastro dos BAIRROS;
+2 - Cálculo das TAXAS;
+3 - Cadastro das EMPRESAS(Ativação);
+4 - Cálculo dos VALORES DE BAIRROS;
+5 - Cadastro dos ENTREGADORES (Ativação);
+
+Para que os testes de integração sejam realizados, é necessário ter todos os cadastros realizados no Flash.
+Os desenvolvedores receberão a documentação das rotas do webservice da Flash, para teste em homologação.
+Juntamente, receberão os dados necessários para realização das chamadas à API:
+- Autenticação à API (usuário e senha);
+- Código da empresa;
 
 ## Métodos
 Requisições para a API devem seguir os padrões:
