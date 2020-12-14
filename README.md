@@ -4,10 +4,9 @@
 Requisições para a API devem seguir os padrões:
 
 Método	Descrição
-GET	Retorna informações de um ou mais registros.
-POST	Utilizado para criar um novo registro.
-PUT	Atualiza dados de um registro ou altera sua situação.
-DELETE	Remove um registro do sistema.
+GET	    Retorna informações de um ou mais registros.
+POST	  Utilizado para criar um novo registro.
+PUT	    Atualiza dados de um registro ou altera sua situação.
 
 ## Respostas
 Código	Descrição
@@ -24,19 +23,19 @@ Código	Descrição
 - Lista os valores de entregas para os bairros cadastrados para o estabelecimento
 *Parâmetro Requerido (IDEMPRESA)
 GET
-### https://api.homolog.flashentregas.com.br/api-V1/valores-entregas-bairros/IDEMPRESA
+### https://api.homolog.flashentregas.com.br/index.php/api-v1/valores-entregas-bairros/IDEMPRESA
 
 
 ### Lista valor de entrega de um bairro
 - Lista o valor de entrega para um bairro cadastrado para o estabelecimento
 *Parâmetros Requeridos (IDEMPRESA, IDBAIRRO)
 GET
-### https://api.homolog.flashentregas.com.br/api-V1/valor-entrega-bairro/IDEMPRESA/IDBAIRRO
+### https://api.homolog.flashentregas.com.br/index.php/api-v1/valor-entrega-bairro/IDEMPRESA/IDBAIRRO
 
 ### Criar entrega
 - Criação de uma entrega para um estabelecimento para um determinado bairro. O estabelecimento precisa estar habilitado, status Ativo, para solicitar entrega. O estabelecimento não tem autonomia para escolher o entregador em nenhum momento. O estabelecimento só consegue criar entrega se estiver com saldo suficiente. Considerando o valor de cada bairro com relação ao saldo e ao saldo provisionado (valor total das entregas em andamento)
 POST
-### https://api.homolog.flashentregas.com.br/api-V1/criar-entrega
+### https://api.homolog.flashentregas.com.br/index.php/api-v1/criar-entrega
 
 *Campos Requeridos
 - cd_empresa (código da empresa)
@@ -50,7 +49,7 @@ POST
 ### Atualizar entrega
 - Atualização da informação de volta ou não de uma entrega
 PUT
-### https://api.homolog.flashentregas.com.br/api-V1/atualizar-volta-entrega
+### https://api.homolog.flashentregas.com.br/index.php/api-v1/atualizar-volta-entrega
 
 *Campos Requeridos
 - cd_entrega (código da entrega)
@@ -60,19 +59,19 @@ PUT
 - Lista os detalhes de uma entrega
 *Parâmetro Requerido (IDENTREGA)
 GET
-### https://api.homolog.flashentregas.com.br/api-V1/detalhe-entrega/IDENTREGA
+### https://api.homolog.flashentregas.com.br/index.php/api-v1/detalhe-entrega/IDENTREGA
 
 
 ### Listar entregas
 - Lista as entregas em andamento de um estabelecimento
 *Parâmetro Requerido (IDEMPRESA)
 GET
-### https://api.homolog.flashentregas.com.br/api-V1/listar-entregas/IDEMPRESA
+### https://api.homolog.flashentregas.com.br/index.php/api-v1/listar-entregas/IDEMPRESA
 
 ### Finalizar entrega
 - Atualização da informação de que determinada entrega foi finalizada
 PUT
-### https://api.homolog.flashentregas.com.br/api-V1/finalizar-entrega
+### https://api.homolog.flashentregas.com.br/index.php/api-v1/finalizar-entrega
 
 *Campos Requeridos
 - cd_entrega (código da entrega)
