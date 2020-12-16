@@ -24,12 +24,13 @@ Requisições para a API devem seguir os padrões:
 |PUT	   | Atualiza dados de um registro ou altera sua situação|
 
 ## Respostas
-Código	Descrição
-200	Requisição executada com sucesso (success).
-400	Erros de validação ou os campos informados não existem no sistema.
-401	Dados de acesso inválidos.
-404	Registro pesquisado não encontrado (Not found).
-405	Método não implementado.
+| Código |	Descrição|
+|:------:|:---------:|
+|200|	Requisição executada com sucesso (success)|
+|400|	Erros de validação ou os campos informados não existem no sistema|
+|401|	Dados de acesso inválidos|
+|404|	Registro pesquisado não encontrado (Not found)|
+|405|	Método não implementado|
 
 ## ROTAS
 
